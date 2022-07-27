@@ -251,17 +251,15 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--icons);
 }
 .employee__social-icon {
-  fill: var(--icons);
+  fill: currentColor;
 }
 .emploee__social-link:hover,
 .emploee__social-link:focus {
   background-color: #2196f3;
-}
-.emploee__social-link:hover .employee__social-icon,
-.emploee__social-link:focus .employee__social-icon {
-  fill: var(--white);
+  color: var(--white);
 }
 
 /* clients */
@@ -275,18 +273,17 @@ img {
   align-items: center;
   width: 170px;
   height: 92px;
+  color: var(--icons);
   border: 1px solid var(--icons);
   border-radius: 4px;
 }
 .client__icon {
-  fill: var(--icons);
+  fill: currentColor;
 }
-.clients__link:hover .client__icon,
-.clients__link:focus .client__icon {
-  fill: var(--hover);
-}
+
 .clients__link:hover,
 .clients__link:focus {
+  color: var(--hover);
   border-color: var(--hover);
 }
 
