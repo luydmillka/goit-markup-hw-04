@@ -121,9 +121,10 @@ img {
 .hi {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/herobcg.jpg);
-  background-size: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(196, 196, 196, 1);
@@ -294,6 +295,7 @@ img {
 }
 .footer__container {
   display: flex;
+  align-items: baseline;
 }
 .footer__address-box {
   margin-right: 70px;
@@ -325,7 +327,6 @@ img {
 }
 .footer__social-title {
   margin-bottom: 20px;
-  padding-top: 12px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -392,6 +393,14 @@ img {
 }
 .portfolio__item {
   flex-basis: calc((100% - 90px) / 3);
+}
+.portfolio__link {
+  display: block;
+}
+.portfolio__link:hover,
+.portfolio__link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio__box {
   padding: 20px 24px;
